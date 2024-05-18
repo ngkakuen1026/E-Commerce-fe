@@ -9,21 +9,26 @@ import Footer from './components/Footer';
 import Home from './routes/Home';
 import About from './routes/About';
 import Dashboard from './routes/Dashboard';
-import Product from './routes/Product';
+import Products from './routes/Products';
 import DetailProduct from './routes/DetailProduct';
 import Login from './routes/Login';
 import Register from './routes/Register';
 
+// Library
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <>
-      <Navbar />  
+      <ToastContainer />
+      <Navbar />
       <Router>
           <Routes>
             <Route index element={ <Home />} />
             <Route path="/p/:product_id" element={<DetailProduct />} />
             <Route path="/about" element={ <About />} />
-            <Route path="/product" element={ <Product />} />
+            <Route path="/products" element={ <Products />} />
             <Route path="/dashboard" element={ <Dashboard />} />
             <Route path="/login" element={ <Login />} />
             <Route path="/register" element={ <Register />} />

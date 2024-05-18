@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white py-8">
+    <div className="bg-gray-800 text-white py-8 ">
       <div className="container mx-auto flex flex-col items-center justify-center max-w-7xl">
         <h2 className="text-2xl font-bold mb-4">
           Easy<span className='text-red-500'>Buy</span>
